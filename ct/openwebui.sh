@@ -22,8 +22,8 @@ header_info
 echo -e "Loading..."
 APP="Open WebUI"
 var_disk="16"
-var_cpu="4"
-var_ram="4096"
+var_cpu="8"
+var_ram="12288"
 var_os="debian"
 var_version="12"
 variables
