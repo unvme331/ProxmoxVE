@@ -20,7 +20,7 @@ EOF
 }
 header_info
 echo -e "Loading..."
-APP="Open WebUI2"
+APP="Open WebUI"
 var_disk="16"
 var_cpu="8"
 var_ram="12288"
@@ -58,9 +58,9 @@ function update_script() {
 header_info
 check_container_storage
 check_container_resources
-if [[ ! -d /opt/open-webui2 ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
+if [[ ! -d /opt/open-webui ]]; then msg_error "No ${APP} Installation Found!"; exit; fi
 msg_info "Updating ${APP} (Patience)"
-cd /opt/open-webui2
+cd /opt/open-webui
 output=$(git pull --no-rebase)
 if echo "$output" | grep -q "Already up to date."
 then
